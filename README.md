@@ -9,3 +9,5 @@ HTML
 CSS
 
 JAVASCRIPT
+
+<img src="https://github.com/leonardosguimaraes/Starbucks/blob/master/images/starbucks.png">
