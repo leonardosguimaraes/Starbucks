@@ -6,17 +6,16 @@
 }
 
 body {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 100px;
     padding-left: 100px;
-
 }
 
 .conteudo {
-    width: 100%; /* largura */
-    display: flex; /* permite que alteremos a posição dos elementos na tela */
-    justify-content: space-between ; /* permite justificar / alinhar os componentes */
-    align-items: center; /* permite alinhar os componentes na vertical */
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center; 
 }
 
 .caixa-texto {
@@ -27,37 +26,35 @@ body {
     width: 600px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .menu {
     display: flex;
     justify-content: center;
-
 }
 
 h2 {
     color: #333;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 span {
     color: #017143;
     font-size: 70px;
-    font-weight: 900;
+    font-weight: 900px;
 }
 
 p {
-    font-size: 20px
-
+    font-size: 16px
 }
 
 button {
     background: #017143;
     color: white;
-    border-radius: 40px;
     border: none;
+    border-radius: 40px;
     cursor: pointer;
     padding: 10px;
     margin-top: 20px;
@@ -65,12 +62,10 @@ button {
 
 .logo {
     width: 80px;
-
 }
 
 .starbucks {
-    width: 340px;
-
+    width: 300px;
 }
 
 .botao-menu {
@@ -78,8 +73,6 @@ button {
     transition: 1s;
     cursor: pointer;
     margin: 10px;
-
-
 }
 
 .botao-menu:hover{
@@ -87,7 +80,7 @@ button {
 }
 
 .circulo {
-    position: absolute; /* Ajuda com o posicionamento */
+    position: absolute;
     width: 100%;
     height: 100%;
     background: #017143;
@@ -95,5 +88,59 @@ button {
     left: 0;
     clip-path: circle(600px at right 800px);
     z-index: -1;
+}
 
+
+@media screen and (max-width: 950px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding: 0;
+        background: #98efcb;
+    }
+
+    .logo {
+        width: 130px;
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+
+    .circulo {
+        display: none;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 500px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 50px
+    }
+
+    span {
+        font-size: 65px;
+    }
+
+    .caixa-imagem {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    .caixa_texto {
+        width: 730px;
+        margin-top: 20px;
+    }
+
+    .botao-menu {
+        margin-top: 150px;
+    }
+
+    button {
+        margin-left: 150px
+    }
 }
